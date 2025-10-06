@@ -1,21 +1,24 @@
-Author: B.Sheethal
-Date: 2025-10-06
+# Docker Hello Python
 
-## Project Description
+This project demonstrates a simple Docker container running a Python script.
 
-This repository contains a simple DevOps pipeline demo using open-source tools including Linux, GitHub, Docker, CI/CD, Nomad, and monitoring tools. The project starts with a simple hello script and will be built upon to create a full workflow.
+## Files
 
+- `hello.py` - Python script that prints a message.
+- `Dockerfile` - Instructions to build the Docker image.
 
+## Build the Docker image
 
-\#python
+Open terminal in this folder and run:
 
-\## hello.py
-
-
-
-```python
-
-print("Hello, DevOps!")
+```bash
+docker build -t hello-python .
 
 
+run the container:
+docker run --rm hello-python
 
+
+You should see the output:
+
+Hello from Docker!
